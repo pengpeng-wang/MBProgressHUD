@@ -33,6 +33,8 @@
 @class MBBackgroundView;
 @protocol MBProgressHUDDelegate;
 
+// test
+
 
 extern CGFloat const MBProgressMaxOffset;
 
@@ -86,6 +88,8 @@ NS_ASSUME_NONNULL_BEGIN
  * @attention MBProgressHUD is a UI class and should therefore only be accessed on the main thread.
  */
 @interface MBProgressHUD : UIView
+
++ (instancetype)showHUDAddedTo1:(UIView *)view animated1:(BOOL)animated;
 
 /**
  * Creates a new HUD, adds it to provided view and shows it. The counterpart to this method is hideHUDForView:animated:.
